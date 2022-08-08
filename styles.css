@@ -1,0 +1,169 @@
+body {
+    background-image:url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-color: cornflowerblue;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    width:100%;
+    height:120px;
+    align-items: center;
+    background-color:deepskyblue;
+    border-width: 3px;
+    border-color:black;
+    border-radius:15px;
+
+}
+/* header {
+    width:100%;
+    display:flex;
+    align-items:center;
+    background-color: deepskyblue;
+    border-width: 3px;
+    border-color:black;
+    border-radius: 15px;
+}*/
+
+#img-logo {
+    border-radius: 10px;
+    margin-left:40px;
+    grid-area: 1 / 1 / 1 / 5; 
+}
+
+.logo-text {
+    grid-area: 2 / 2 / 1 / 5; 
+}
+
+#login {
+    font-size: 24px;
+    grid-area: 1 / 9 / 1 / 10;
+    margin-right:40px;
+}
+
+#banner-img {
+    border-radius: 20px;
+    border-color: black;
+    border-width: 10px;
+    width:75%;
+    height: auto;
+    margin-top:40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#info {
+
+    background-color:#8585e0;
+    border-radius: 20px;
+    border-color: black;
+    width:75%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#profile-img {
+    display:flex;
+    position:relative;
+    width:320px;
+    height:auto;
+    margin-top:-160px;
+    padding-left:40px;
+}
+
+.info-title {
+    display:flex;
+    justify-content:flex-end;
+    margin-right:40px;
+    margin-top:-100px;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.info-subtitle {
+    display:flex;
+    justify-content:flex-end;
+    margin-right:40px;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.info-description {
+    display:flex;
+    justify-content:flex-end;
+    margin-right:40px;
+    padding-bottom:20px;
+}
+
+ul {
+    list-style: none;
+    text-align:end;
+}
+
+#experience {
+    background-color:#8585e0;
+    border-radius: 20px;
+    border-color: black;
+    width:75%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.8;
+}
+#experience:hover {
+    opacity:0.95;
+}
+
+.title {
+    text-align:center;
+    font-size:40px;
+    background-color:#5d5dd5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#logo-ipem297 {
+    margin-left: 20px;
+    border-radius:5px;
+}
+
+.grid-parent {
+    display: grid;
+    margin-left:40px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+   
+
+.grid-div1 { grid-area: 1 / 1 / 4 / 2; }
+.grid-div2 { grid-area: 1 / 2 / 2 / 6; }
+.grid-div3 { grid-area: 2 / 2 / 4 / 6; }
+
+#education {
+    background-color:#8585e0;
+    border-radius: 20px;
+    border-color: black;
+    width:75%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.8;
+}
+#education:hover {
+    opacity:0.95;
+}
+
+.institutions-logos {
+    margin-left: 20px;
+    border-radius:5px;
+}
