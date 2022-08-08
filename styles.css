@@ -20,15 +20,6 @@ header {
     border-radius:15px;
 
 }
-/* header {
-    width:100%;
-    display:flex;
-    align-items:center;
-    background-color: deepskyblue;
-    border-width: 3px;
-    border-color:black;
-    border-radius: 15px;
-}*/
 
 #img-logo {
     border-radius: 10px;
@@ -73,7 +64,7 @@ header {
 #profile-img {
     display:flex;
     position:relative;
-    width:320px;
+    width: 320px;
     height:auto;
     margin-top:-160px;
     padding-left:40px;
@@ -130,24 +121,35 @@ ul {
     border-top-right-radius: 20px;
 }
 
-#logo-ipem297 {
-    margin-left: 20px;
-    border-radius:5px;
-}
-
 .grid-parent {
     display: grid;
     margin-left:40px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0.7fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    padding:20px;
+    margin-left:20px;
+    align-items: center;
 }
    
 
-.grid-div1 { grid-area: 1 / 1 / 4 / 2; }
-.grid-div2 { grid-area: 1 / 2 / 2 / 6; }
-.grid-div3 { grid-area: 2 / 2 / 4 / 6; }
+.grid-div1 { 
+    grid-area: 1 / 1 / 4 / 2; 
+}
+.grid-div2 {
+     grid-area: 1 / 2 / 2 / 6; 
+     font-size:32px;
+     font-family: 'Roboto Condensed', sans-serif;
+     
+}
+.grid-div3 {
+     grid-area: 2 / 2 / 4 / 6; 
+     font-size: 24px;
+     margin-left:-40px;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: 300;
+}
 
 #education {
     background-color:#8585e0;
@@ -164,6 +166,10 @@ ul {
 }
 
 .institutions-logos {
-    margin-left: 20px;
     border-radius:5px;
+    width:120px;
+    height: 120px;
+    margin-top:40px;
+    margin-left:20px;
+    margin-bottom:-40px;
 }
