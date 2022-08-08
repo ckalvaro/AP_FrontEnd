@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+            <link rel="stylesheet" type="text/css" href="styleslogin.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="login-container"> 
+    <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required> <br>
+            <button id="submit-button" type="submit" value="">Login</button> <br>
+    </form>
+                
+            <br>
+            <p> ¿Aún no estás registrado?  
+                <br> 
+                <a href="index.html" target="_blank"> Regístrate</a>
+            </p>
+        </div>
+        <script>
+            let lista_de_usuarios = [];
+            //let id_usuario = 0;
+            const add_user = (ev) => {
+                ev.preventDefault();
+            //id_usuario++;
+                let usuario = {
+                //id: id_usuario,
+                    username: document.getElementById('username').value,
+                    password: document.getElementById('password').value
+                }
+        
+                
+                lista_de_usuarios.push(usuario);
+                document.forms[0].reset();
+                
+                console.warn('added' , {lista_de_usuarios});
+
+                localStorage.setItem('Usuarios ', JSON.stringify(lista_de_usuarios) );
+        
+            /* for (let i = 0; i < length(lista_de_usuarios); i++) {
+                if (usuario.id == lista_de_usuarios[i].id && usuario.username == lista_de_usuarios && usuario.password == lista_de_usuarios[i].password) 
+                {
+                    console.warn("login correcto!");
+                }
+                else 
+                {
+                    console.warn("datos incorrectos / no existentes");
+                }
+            } */
+            }
+            document.addEventListener('DOMContentLoaded', ()=>{
+                document.getElementById('submit-button').addEventListener('click', add_user);
+            });
+        </script>
+    </body>
+</html>
